@@ -12,5 +12,5 @@ while (*s != '\0')
 slength++;
 s++;
 }
-return (slength)
+return (slength);
 }
