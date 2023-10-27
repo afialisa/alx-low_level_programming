@@ -2,11 +2,10 @@
 
 /**
  * wildcmp - compare strings
- * @s1: pointer to strings params
- * @s2: pointer to string params
- * Return: 0
+ * @s1: pointer to the first string
+ * @s2: pointer to the second string
+ * Return: 1 if the strings can be considered identical, 0 otherwise
  */
-
 int wildcmp(char *s1, char *s2)
 {
 if (*s1 == '\0')
@@ -19,7 +18,7 @@ return (*s2 == '\0');
 }
 if (*s2 == '*')
 {
-return (wildcmp(s1 + 1, s2) || wildcmp(s1, s2, +1));
+return (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2));
 }
 else if (*s1 == *s2)
 {
