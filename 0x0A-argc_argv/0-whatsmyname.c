@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio.h"
 /**
  * main - A function that prints the programe name
  * @argc: arguments counts (unused)
