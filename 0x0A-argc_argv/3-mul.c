@@ -17,7 +17,7 @@ return (1);
 }
 a = _atoi(argv[1]);
 b = _atoi(argv[2]);
-answer = a *b;
+answer = a * b;
 printf("%d\n", answer);
 return (0);
 }
