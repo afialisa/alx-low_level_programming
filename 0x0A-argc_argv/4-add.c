@@ -10,7 +10,7 @@
  */
 int str_to_int(const char *str)
 {
-return (atoi str);
+return atoi(str);
 }
 /**
  * check_num - a program that checks if a string consists of digits
