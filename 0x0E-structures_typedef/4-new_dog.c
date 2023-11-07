@@ -17,7 +17,7 @@ a++;
 return (a);
 }
 /**
- * *_strcpy - a program that copies the string pointed by src
+ * *_strcpy - a program that copies the string
  * including the terminating null byte (\0)
  * @dest: pointer to the buffer that is copied to the string
  * @src: copied string
