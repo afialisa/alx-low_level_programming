@@ -1,11 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+#define FILE_NAME __FILE__
 /**
- * main - a program tha t prints the name of a file
+ * main - a program that prints the name of a file
  *
  * Return: 0 (Always)
  */
 int main(void)
 {
-printf("%s\n", __FILE__);
+puts(FILE_NAME);
 retun(0);
 }
