@@ -8,16 +8,16 @@
  */
 int _atoi(char *s)
 {
-int a, b, c, len, d, digit;
+int a, b, c, ln, d, digit;
 a = 0;
 b = 0;
 c = 0;
-len = 0;
+ln = 0;
 d = 0;
 digit = 0;
-while (s[len] != '\0')
+while (s[ln] != '\0')
 len++;
-while (a < len && d == 0)
+while (a < ln && d == 0)
 {
 if (s[a] == '-')
 ++b;
@@ -47,15 +47,15 @@ return (c);
  */
 int main(int argc, char *argv[])
 {
-int answer, a, b;
+int answer, num1, num2;
 if (argc < 3 || argc > 3)
 {
 printf("Error\n");
 return (1);
 }
-a = _atoi(argv[1]);
-b = _atoi(argv[2]);
-answer = a * b;
+num1 = _atoi(argv[1]);
+num2 = _atoi(argv[2]);
+answer = num1 * num2;
 printf("%d\n", answer);
 return (0);
 }
