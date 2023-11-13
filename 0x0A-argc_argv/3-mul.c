@@ -55,7 +55,7 @@ return (1);
 }
 num1 = _atoi(argv[1]);
 num2 = _atoi(argv[2]);
-answer = num1 * num2;
+answer = num1 *num2;
 printf("%d\n", answer);
 return (0);
 }
